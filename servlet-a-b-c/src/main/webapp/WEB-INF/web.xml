@@ -1,0 +1,30 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>PrintServlet</servlet-name>
+		<display-name>PrintServlet</display-name>
+		<description></description>
+		<servlet-class>cn.zxg.PrintServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>TellServlet</servlet-name>
+		<display-name>TellServlet</display-name>
+		<description></description>
+		<servlet-class>cn.zxg.TellServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PrintServlet</servlet-name>
+		<url-pattern>/PrintServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TellServlet</servlet-name>
+		<url-pattern>/TellServlet</url-pattern>
+	</servlet-mapping>
+	<session-config>
+		<session-timeout>1</session-timeout>
+	</session-config>
+</web-app>
