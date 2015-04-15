@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cn.zxg</groupId>
+  <artifactId>servlet-proxool</artifactId>
+  <packaging>war</packaging>
+  <version>1.0</version>
+  <name>servlet-proxool Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+  <repositories>
+  	<repository>
+		<id>oschina</id>
+		<name>oschina</name>
+		<url>http://maven.oschina.net/content/groups/public/</url>
+  	</repository>
+  </repositories>
+  
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+<!--     servlet -->
+    <dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>servlet-api</artifactId>
+		<version>2.5</version>
+	</dependency>
+<!-- 	连接池 -->
+	<dependency>
+		<groupId>proxool</groupId>
+		<artifactId>proxool</artifactId>
+		<version>0.8.3</version>
+	</dependency>
+<!-- 	jdbc -->
+	<dependency>
+		<groupId>com.oracle</groupId>
+		<artifactId>ojdbc14</artifactId>
+		<version>10.2.0.4.0</version>
+	</dependency>
+	
+  </dependencies>
+  <build>
+    <finalName>servlet-proxool</finalName>
+  </build>
+</project>

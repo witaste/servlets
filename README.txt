@@ -8,3 +8,4 @@ org.apache.maven.archetypes:maven-archetype-webapp
 4.servlet-A-B-C 跳转方式和加载顺序
 5.servlet-db-hello 使用servlet从数据库中检索信息并显示
 6.servlet-properties 读取properties资源文件
+7.servlet-proxool 配置数据库连接池

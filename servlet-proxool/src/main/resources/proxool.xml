@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxool>
+	<alias>test-pool</alias>
+	<driver-url>jdbc:oracle:thin:@172.16.50.67:1521:orcl</driver-url>
+	<driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
+	<driver-properties>
+		<property name="user" value="e_channel" />
+		<property name="password" value="e_channel_test" />
+	</driver-properties>
+	<minimum-connection-count>1</minimum-connection-count>
+	<maximum-connection-count>5</maximum-connection-count>
+	<test-before-use>true</test-before-use>
+	<house-keeping-test-sql>select SYSDATE from dual</house-keeping-test-sql>
+</proxool>
